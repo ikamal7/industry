@@ -1,0 +1,327 @@
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	clip-path: none;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000;
+	/* Above WP toolbar. */
+}
+
+/* Do not show the outline on the skip link target. */
+#content[tabindex="-1"]:focus {
+	outline: 0;
+}
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+	border: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0;
+}
+
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+
+/* Make sure logo link wraps around logo image. */
+.custom-logo-link {
+	display: inline-block;
+}
+
+/*--------------------------------------------------------------
+## Captions
+--------------------------------------------------------------*/
+.wp-caption {
+	margin-bottom: 1.5em;
+	max-width: 100%;
+}
+
+.wp-caption img[class*="wp-image-"] {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wp-caption .wp-caption-text {
+	margin: 0.8075em 0;
+}
+
+.wp-caption-text {
+	text-align: center;
+}
+
+/*--------------------------------------------------------------
+## Galleries
+--------------------------------------------------------------*/
+.gallery {
+	margin-bottom: 1.5em;
+}
+
+.gallery-item {
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	width: 100%;
+}
+
+.gallery-columns-2 .gallery-item {
+	max-width: 50%;
+}
+
+.gallery-columns-3 .gallery-item {
+	max-width: 33.33%;
+}
+
+.gallery-columns-4 .gallery-item {
+	max-width: 25%;
+}
+
+.gallery-columns-5 .gallery-item {
+	max-width: 20%;
+}
+
+.gallery-columns-6 .gallery-item {
+	max-width: 16.66%;
+}
+
+.gallery-columns-7 .gallery-item {
+	max-width: 14.28%;
+}
+
+.gallery-columns-8 .gallery-item {
+	max-width: 12.5%;
+}
+
+.gallery-columns-9 .gallery-item {
+	max-width: 11.11%;
+}
+
+.gallery-caption {
+	display: block;
+}
+.industry-content-area {
+    padding: 80px 0;
+}
+
+.industry-article-list {
+    padding-right:  40px;
+}
+
+.industry-article-list article, .widget-area .widget {
+    border: 1px solid #f2f2f2;
+    padding:  30px;
+    margin-bottom: 30px;
+}
+
+.industry-article-list a {
+    color: #333;
+}
+
+.industry-article-list h2, .widget-area .widget h2 {
+    font-size:  25px;
+    margin-bottom:  10px;
+}
+
+.entry-meta, .entry-footer {
+    font-size: 90%;
+}
+
+.entry-footer {
+    margin-top: 20px;
+}
+
+.entry-meta > span, .entry-footer > span {
+    padding-right: 15px;
+}
+
+.industry-featured-img {
+    margin-bottom: 20px;
+}
+
+.widget-area .widget a {
+    color: #333;
+}
+
+.widget-area .widget ul {
+    margin:  0;
+    list-style:  none;
+    padding-left: 0;
+    line-height: 30px;
+}
+
+select {
+    max-width: 100%;
+}
+
+.calendar_wrap table {
+    width:  100%;
+    border-left:  1px solid #ddd;
+    border-bottom:  1px solid #ddd;
+}
+
+.calendar_wrap table th, .calendar_wrap table td {
+    border-right:  1px solid #ddd;
+    border-top:  1px solid #ddd;
+    padding: 10px;
+}
+
+.calendar_wrap table th {
+    background-color: #ddd;
+}
+
+.widget-area .widget ul ul {
+    padding-left: 15px;
+}
+
+.rssSummary {
+    font-size: 90%;
+}
+
+.widget_rss li {
+    margin-bottom: 11px;
+}
+
+.widget-area .widget.widget_rss a {
+    font-weight: 700;
+}
+
+.rss-date {
+    font-size:  90%;
+    display: block;
+}
+
+.widget img {
+    height: auto;
+}
+article.sticky {
+    background-color: #EFF0F1;
+    position: relative;
+}
+article.sticky:before {
+    position:  absolute;
+    content: '\f08d';
+    font-family: fontAwesome;
+    right:  15px;
+    top: 0px;
+    font-size: 30px;
+    transform: rotate(45deg);
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.comment-form input, .comment-form textarea {
+    width: 100%;
+}
+
+.comment-form input[type=submit] {
+    width:  auto;
+    margin-top:  15px;
+    font-weight: 600;
+}
+
+.comments-title {
+    margin-top: 50px;
+    margin-bottom:  30px;
+    font-size:  20px;
+}
+
+.comment-list {
+    list-style:  none;
+    margin:  0;
+    padding:  0;
+}
+
+.comment-metadata {
+    font-size:  80%;
+    margin-bottom: 15px;
+}
+
+ol.children li {
+    margin-top: 20px;
+    list-style:  none;
+}
+
+.comment-list li.comment {
+    margin-bottom: 30px;
+}
+
+.comment-author.vcard {
+    margin-bottom: 15px;
+}
+
+.comment-reply-link {
+    display:  inline-block;
+    background: #46BE25;
+    color: #ffffff;
+    padding: 1px 10px;
+    font-weight: 600;
+}
+
+.comment-list a {
+    color: #333;
+}
